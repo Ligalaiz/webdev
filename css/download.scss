@@ -1,0 +1,84 @@
+.download {
+  max-width: 483px;
+  margin: 0 auto;
+  padding: 120px 0 180px;
+
+  text-align: center;
+
+  &__title {
+    margin-bottom: 22px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  &__app .download__list {
+    margin: 0 auto;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 402px;
+  }
+
+  &__link {
+    position: relative;
+
+    display: block;
+    min-width: 186px;
+    padding: 16px 60px 14px 19px;
+
+    line-height: 1.17;
+    color: #ffffff;
+    text-align: left;
+    text-transform: uppercase;
+
+    background-color: #00AFDB;
+
+    transition: all .2s linear;
+
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+    }
+
+    &::before {
+      right: 0;
+      top: 0;
+
+      width: 60px;
+      height: 46px;
+
+      background-color: #009CC2;
+    }
+
+    &::after {
+      right: 17px;
+      top: 50%;
+
+      width: 25px;
+      height: 25px;
+
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+
+
+      transform: translateY(-50%);
+    }
+
+    &--apple::after {
+      background-image: url('../assets/img/download/apple.svg');
+    }
+
+    &--android::after {
+      background-image: url('../assets/img/download/android.svg');
+    }
+  }
+}

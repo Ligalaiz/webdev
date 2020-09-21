@@ -1,0 +1,149 @@
+.community {
+  padding: 120px 0px 140px;
+
+  background-color: #F5F6F7;
+
+  &__wrap {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__promo {
+    position: relative;
+
+    min-width: 298px;
+    margin-right: 139px;
+    padding-top: 65px;
+
+    text-align: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+
+      width: 45px;
+      height: 45px;
+
+      background-repeat: no-repeat;
+      background-image: url('../assets/img/idea/icon.png');
+
+      transform: translateX(-50%);
+    }
+  }
+
+  &__title {
+    margin-bottom: 12px;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+  }
+}
+
+.slider {
+  position: relative;
+  overflow-x: hidden;
+
+  min-width: 894px;
+
+  &__wrap {
+    width: 437px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+  }
+
+  &__item {
+    width: 407px;
+    height: 244px;
+  }
+
+  &__button {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 106px;
+
+    top: -44px;
+    right: calc(50% - 543px);
+
+    font-size: 0;
+  }
+
+  &__current,
+  &__slash,
+  &__total {
+    display: block;
+
+    font-size: 18px;
+  }
+
+  &__slash {
+    font-size: 20px;
+  }
+}
+
+.button {
+
+  &--prev,
+  &--next {
+    position: relative;
+    border: none;
+    width: 30px;
+    height: 30px;
+
+    background-color: transparent;
+
+    &[disabled] {
+      opacity: 0.5;
+    }
+    &--prev {
+      margin-right: 5px;
+    }
+  }
+
+  &--prev::before,
+  &--next::before {
+    content: '';
+    position: absolute;
+
+    top: 36%;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #373737;
+    border-left: 2px solid #373737;
+
+    background-repeat: no-repeat;
+
+    transition: all .2s linear;
+  }
+
+  &--prev::before {
+    left: 14px;
+    transform: rotate(-45deg);
+  }
+
+  &--prev:not([disabled]):hover::before {
+    transform: rotate(-45deg) scale(1.5);
+  }
+
+  &--next::before {
+    right: 14px;
+    transform: rotate(135deg);
+  }
+
+  &--next:not([disabled]):hover::before {
+    transform: rotate(135deg) scale(1.5);
+  }
+}

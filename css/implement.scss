@@ -1,0 +1,30 @@
+.implement {
+  padding: 120px 0px 140px;
+
+  &__wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__img-wrap {
+    max-width: 407px;
+    margin-right: 139px;
+  }
+
+  &__promo {
+    max-width: 407px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    margin-bottom: 29px;
+  }
+
+  &__link {
+    width: 180px;
+  }
+}

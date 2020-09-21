@@ -1,0 +1,26 @@
+.idea {
+  padding: 120px 0 140px;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__promo {
+    max-width: 407px;
+  }
+
+  &__title {
+    max-width: 378px;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    margin-bottom: 32px;
+  }
+
+  &__img-wrap {
+    max-width: 407px;
+  }
+}

@@ -1,0 +1,70 @@
+.subscription {
+  padding: 201px 0px 220px;
+
+  background-repeat: no-repeat;
+  background-image: url('../assets/img/subscription/bg.jpg');
+  background-position: 50% 0;
+}
+
+.form {
+  max-width: 408px;
+  margin: 0 auto;
+
+  &__title {
+    margin-bottom: 29px;
+
+    text-align: center;
+    color: #ffffff;
+  }
+
+  &__mail {
+    width: calc(100% - 67px);
+    padding: 14px 24px 15px;
+    margin-right: -1px;
+    margin-left: 1px;
+  }
+
+  &__btn {
+    position: relative;
+
+    width: 66px;
+    height: 46px;
+    padding: 0;
+    border: none;
+
+    background-color: #00AFDB;
+    transition: all .2s linear;
+
+    &:hover {
+      background-color: #009CC2;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: calc(50% - 7px);
+      top: 40%;
+
+      background-color: #ffffff;
+    }
+
+    &::before {
+      width: 9px;
+      height: 4px;
+      transform: rotate(45deg) translate(2px, 4px);
+    }
+
+    &::after {
+      width: 15px;
+      height: 4px;
+      transform: rotate(-45deg) translate(0, 3px);
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
